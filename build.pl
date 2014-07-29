@@ -82,7 +82,7 @@ else
 
 sub BuildMac
 {
-	system ("rm", "-rf", "Build");
+	system("make" , "-f", "Makefile.osx", "clean");
 	system("make" , "-f", "Makefile.osx", "all") && die ("Failed to build version control plugins");
 }
 

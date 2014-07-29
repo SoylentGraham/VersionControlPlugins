@@ -68,3 +68,7 @@ $(SVNPLUGIN_TARGET): $(COMMON_MODULES) $(SVNPLUGIN_MODULES)
 
 clean:
 	rm -f Build/*.* $(COMMON_MODULES) $(P4PLUGIN_MODULES) $(SVNPLUGIN_MODULES) $(TESTSERVER_MODULES)
+	rm ./P4Plugin/Source/*.o
+	rm ./SvnPlugin/Source/*.o
+	rm ./Common/*.o
+	rm ./Test/Source/*.o
